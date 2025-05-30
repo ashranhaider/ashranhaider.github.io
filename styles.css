@@ -1,0 +1,333 @@
+:root {
+    --primary-color: #2d3436;
+    --secondary-color: #0984e3;
+    --accent-color: #00b894;
+    --text-color: #2d3436;
+    --light-bg: #f5f6fa;
+    --white: #ffffff;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Dark Theme Variables */
+[data-theme="dark"] {
+    --primary-color: #f5f6fa;
+    --secondary-color: #74b9ff;
+    --accent-color: #00cec9;
+    --text-color: #f5f6fa;
+    --light-bg: #2d3436;
+    --white: #2d3436;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.btn-icon {
+    background: var(--white);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+.btn-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Loading Animation */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--light-bg);
+    border-top: 5px solid var(--secondary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Enhanced Skills Section */
+.skill-category {
+    margin-bottom: 2rem;
+}
+
+.skill-category-title {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.skills-list li {
+    padding: 0.5rem 1rem;
+    background: var(--light-bg);
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: var(--transition);
+}
+
+.skills-list li:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+    transform: translateX(5px);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    line-height: 1.6;
+}
+
+.main-wrapper {
+    padding: 2rem 0;
+}
+
+.resume-wrapper {
+    background: var(--white);
+    border-radius: 1.5rem;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+}
+
+.resume-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+.resume-header::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: var(--white);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.resume-name {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+}
+
+.resume-tagline {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.resume-contact {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+}
+
+.resume-contact a {
+    color: var(--white);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.resume-contact a:hover {
+    color: var(--accent-color);
+}
+
+.resume-profile-image {
+    width: 180px;
+    height: 180px;
+    border: 4px solid var(--white);
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+.resume-profile-image:hover {
+    transform: scale(1.05);
+}
+
+.resume-section-heading {
+    color: var(--secondary-color);
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.resume-section-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--accent-color);
+}
+
+.item {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: var(--white);
+    box-shadow: var(--card-shadow);
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.item-heading {
+    flex-wrap: wrap;
+}
+
+.item-title {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.item-meta {
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background: var(--secondary-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: var(--accent-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: var(--transition);
+}
+
+.btn-secondary:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.resume-footer {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 0;
+}
+
+.social-links a {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .resume-header {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    
+    .resume-contact {
+        margin-top: 1rem;
+    }
+
+    .resume-name {
+        font-size: 2.2rem;
+    }
+
+    .item {
+        padding: 1rem;
+    }
+
+    .item-title {
+        font-size: 1.1rem;
+    }
+
+    .item-meta {
+        font-size: 0.9rem;
+    }
+
+    .resume-section-heading {
+        font-size: 1.3rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .resume-body {
+        padding: 1.5rem !important;
+    }
+
+    .skills-list li {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-name {
+        font-size: 1.8rem;
+    }
+
+    .resume-tagline {
+        font-size: 1.1rem;
+    }
+
+    .item-content p {
+        font-size: 0.95rem;
+    }
+} 

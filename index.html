@@ -7,94 +7,87 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+	<meta name="description" content="Full Stack Developer Portfolio - Ashran Haider. Experienced in .NET Core, React, and Cloud Technologies">
+	<meta name="author" content="Ashran Haider">
+	<meta name="keywords" content="Full Stack Developer, .NET Core, React, Cloud Architecture, Software Engineer">
+	
+	<!-- Open Graph Tags -->
+	<meta property="og:title" content="Ashran Haider - Full Stack Developer">
+	<meta property="og:description" content="Full Stack Developer specializing in .NET Core, React, and Cloud Technologies">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://your-portfolio-url.com">
+	<meta property="og:image" content="https://your-portfolio-url.com/profile-image.jpg">
+	
 	<link rel="shortcut icon" href="favicon.png"> 
 	
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	
 	<!-- FontAwesome JS-->
 	<script defer src="assets/fontawesome/js/all.min.js"></script>
 	
-	<!-- Theme CSS -->  
-	<link id="theme-style" rel="stylesheet" href="assets/css/devresume.css">
-
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Custom CSS -->
+	<link href="styles.css" rel="stylesheet">
 </head> 
 
 <body>
-	
+	<!-- Theme Toggle -->
+	<div class="theme-toggle">
+		<button id="themeToggle" class="btn btn-icon">
+			<i class="fas fa-moon"></i>
+		</button>
+	</div>
+
+	<!-- Loading Animation -->
+	<div class="loading-screen">
+		<div class="loader"></div>
+	</div>
+
 	<div class="main-wrapper">
 		<div class="container px-3 px-lg-5">
-			<article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
-				
+			<article class="resume-wrapper mx-auto p-0 mb-5">
 				<div class="resume-header">
 					<div class="row align-items-center">
 						<div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
-							<h2 class="resume-name mb-0 text-uppercase">Ashran Haider</h2>
-							<div class="resume-tagline mb-3 mb-md-0">Full Stack Developer</div>
-						</div><!--//resume-title-->
+							<h2 class="resume-name">Ashran Haider</h2>
+							<div class="resume-tagline">Full Stack Developer</div>
+						</div>
 						
 						<div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
 							<ul class="list-unstyled mb-0">
-								<li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg me-2 "></i><a class="resume-link" href="tel:+16478185812">+1 647 8185812</a></li>
-								<li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg me-2"></i><a class="resume-link" href="mailto:ch.ashran@gmail.com">ch.ashran@gmail.com</a></li>
+								<li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg me-2"></i><a href="tel:+16478185812">+1 647 8185812</a></li>
+								<li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg me-2"></i><a href="mailto:ch.ashran@gmail.com">ch.ashran@gmail.com</a></li>
 								<li class="mb-0"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Toronto</li>
 							</ul>
-						</div><!--//resume-contact-->
-					</div><!--//row-->
-					
-					<!-- Download Buttons mobile buttons -->
-				<div class="d-block d-md-none mt-2">
-					<div class="d-grid gap-2">
-						<a href="resume.pdf" class="btn btn-primary" download>
-							<i class="fas fa-file-pdf me-2"></i>PDF Resume
-						</a>
-						<a href="resume.docx" class="btn btn-success" download>
-							<i class="fas fa-file-word me-2"></i>DOCX Resume
-						</a>
-					</div>
-				</div>
-
-				<!-- Download Buttons desktop buttons -->
-				<div class="row mt-3 d-none d-md-flex justify-content-center">
-					<div class="col-auto">
-						<a href="resume.pdf" class="btn btn-primary me-2" download="AshranHaider_Resume.pdf" target="_blank">
-							<i class="fas fa-file-pdf me-2"></i>Download resume in PDF
-						</a>
-						<a href="resume.docx" class="btn btn-success" download="AshranHaider_Resume.docx" target="_blank">
-							<i class="fas fa-file-word me-2"></i>Download resume in DOCX
-						</a>
-					</div>
-				</div>
-
-					
-				</div><!--//resume-header-->
-				<hr>
-				<div class="resume-intro py-3">
-					<div class="row align-items-center">
-						<div class="col-12 col-md-3 col-xl-2 text-center">
-						    <img class="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded mx-auto" style="border-radius: 50% !important; object-fit: cover;" src="assets/images/resume-profile.jpg" alt="image">
 						</div>
-						
-						<div class="col text-start">
-							<p class="mb-0">
-								Full Stack Developer with 7+ years of experience architecting and delivering scalable web applications using modern .NET and JavaScript frameworks. Proven expertise in end-to-end development with <strong>.NET Core, Angular, React, SQL/NoSQL databases, and Azure DevOps</strong>, coupled with a strong focus on CI/CD pipelines and cloud-native solutions. Passionate about translating complex business requirements into efficient, maintainable code—leveraging Agile methodologies to drive collaboration across teams. Committed to continuous learning and mentoring, with a track record of leading projects like the <strong>Asset Management System</strong> and optimizing critical systems for clients like <strong>NLC</strong>.  
-							</p>
-						</div><!--//col-->
 					</div>
-				</div><!--//resume-intro-->
-				<hr>
-				<div class="resume-body">
+
+					<!-- Download Buttons -->
+					<div class="row mt-4">
+						<div class="col-12 text-center">
+							<a href="resume.pdf" class="btn btn-primary me-2" download="AshranHaider_Resume.pdf">
+								<i class="fas fa-file-pdf me-2"></i>Download PDF Resume
+							</a>
+							<a href="resume.docx" class="btn btn-secondary" download="AshranHaider_Resume.docx">
+								<i class="fas fa-file-word me-2"></i>Download DOCX Resume
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="resume-body p-5">
 					<div class="row">
-						<div class="resume-main col-12 col-lg-8 col-xl-9   pe-0   pe-lg-5">
+						<div class="resume-main col-12 col-lg-8 pe-0 pe-lg-5">
 							<section class="work-section py-3">
-								<h3 class="text-uppercase resume-section-heading mb-4">Work Experiences</h3>
+								<h3 class="resume-section-heading">Work Experience</h3>
 								
 								<div class="item mb-3">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Full Stack Developer</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">Contour Pvt Limited | 03/2023 - 12/2023</div>
+									<div class="item-heading">
+										<h4 class="item-title">Full Stack Developer</h4>
+										<div class="item-meta">Contour Pvt Limited | 03/2023 - 12/2023</div>
 									</div>
 									<div class="item-content">
 										<p>Developed and maintained CRB Cunningham's software using Agile methodology. Collaborated with the team throughout the entire software development lifecycle, from requirements gathering to final delivery of components. Worked extensively with technologies including C#, ASP.NET Core, React.js, and SQL Server to build robust web applications.</p>
@@ -102,9 +95,9 @@
 								</div><!--//item-->
 								
 								<div class="item mb-3">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Full Stack Developer</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">DPL | 08/2021 - 03/2023</div>
+									<div class="item-heading">
+										<h4 class="item-title">Full Stack Developer</h4>
+										<div class="item-meta">DPL | 08/2021 - 03/2023</div>
 									</div>
 									<div class="item-content">
 										<p>Successfully developed and delivered the 'Asset Management System' product independently before transitioning to a team lead role for the project. Implemented the solution using .NET 6, Entity Framework, and MySQL for the backend, with Angular, Bootstrap, and Angular Material UI for the frontend. Integrated Active Directory for secure user authentication and established Azure DevOps CI/CD pipelines for efficient multi-environment deployments on IIS Server.</p>
@@ -113,9 +106,9 @@
 								</div><!--//item-->
 								
 								<div class="item mb-3">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">.NET Core Developer / Full Stack Developer</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">DPL | 04/2019 - 03/2021</div>
+									<div class="item-heading">
+										<h4 class="item-title">.NET Core Developer / Full Stack Developer</h4>
+										<div class="item-meta">DPL | 04/2019 - 03/2021</div>
 									</div>
 									<div class="item-content">
 										<p>Contributed as an ASP.NET MVC Developer to the Arro Money Project, designing and implementing multiple features for the banking application's admin portal. Configured Active Directory integration for secure user authentication. Established CI/CD pipelines to streamline development environment deployments for the AgeEnvy project.</p>
@@ -124,9 +117,9 @@
 								</div><!--//item-->
 								
 								<div class="item mb-3">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">ASP.NET Developer</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">Fincon Services | 02/2018 - 04/2019</div>
+									<div class="item-heading">
+										<h4 class="item-title">ASP.NET Developer</h4>
+										<div class="item-meta">Fincon Services | 02/2018 - 04/2019</div>
 									</div>
 									<div class="item-content">
 										<p>Designed and implemented the backend API for a survey application using ASP.NET and SQL Server, enabling seamless data collection through Android devices. Developed a comprehensive web-based reporting platform that transformed raw survey data into actionable business insights through interactive visualizations and analytics.</p>
@@ -134,96 +127,104 @@
 								</div><!--//item-->
 								
 								<div class="item">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">ASP.NET Developer</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">COMSATS IT Center | 02/2017 - 10/2017</div>
+									<div class="item-heading">
+										<h4 class="item-title">ASP.NET Developer</h4>
+										<div class="item-meta">COMSATS IT Center | 02/2017 - 10/2017</div>
 									</div>
 									<div class="item-content">
 										<p>As a Junior Developer on the COMSATS student portal project, implemented multiple application forms and reporting features using ASP.NET Webforms technology with SQL Server backend. Contributed to improving the student experience by enhancing system functionality and streamlining administrative processes through customized solutions.</p>
 									</div>
 								</div><!--//item-->
 							</section><!--//work-section-->
-						</div><!--//resume-main-->
-						<aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
-							<section class="skills-section py-3">
-								<h3 class="text-uppercase resume-section-heading mb-4">Skills</h3>
+							
+							<section class="education-section py-3">
+								<h3 class="resume-section-heading">Education</h3>
+								<div class="item mb-3">
+									<div class="item-heading">
+										<h4 class="item-title">Graduate Certificate in Cloud Architecture and Administration</h4>
+										<div class="item-meta">Seneca College Markham | 01/2024 - 09/2024</div>
+									</div>
+								</div>
 								<div class="item">
-									<h4 class="item-title">Technical</h4>
-									<ul class="list-unstyled resume-skills-list">
-										<li class="mb-2">ASP.NET Core</li>
-										<li class="mb-2">.NET Core API<li>
-											<li class="mb-2">SQL/MySQL/SQLServer</li>
-											<li class="mb-2">Entity Framework</li>
-											<li class="mb-2">C#</li>
-											<li class="mb-2">Reactjs</li>
-											<li class="mb-2">Azure</li>
-											<li class="mb-2">AWS</li>
-											<li class="mb-2">Agile</li>
-											<li>Lead and deliver complex software systems</li>
-										</ul>
-									</div><!--//item-->
-									<div class="item">
-										<h4 class="item-title">Professional</h4>
-										<ul class="list-unstyled resume-skills-list">
-											<li class="mb-2">Effective communication</li>
-											<li class="mb-2">Problem-solving</li>
-											<li class="mb-2">Attention to detail</li>
-											<li class="mb-2">Leadership</li>
-											<li class="mb-2">Attention to detail</li>Leadership
-											<li class="mb-2">Team player<li>
-											<li class="mb-2">Problem solving</li>
-											<li>Continuous Learning</li>
-											</ul>
-										</div><!--//item-->
-									</section><!--//skills-section-->
-									<section class="education-section py-3">
-										<h3 class="text-uppercase resume-section-heading mb-4">Education</h3>
-										<ul class="list-unstyled resume-education-list">
-											<li class="mb-3">
-												<div class="resume-degree font-weight-bold">Graduate Certificate in Cloud Architecture and Administration</div>
-												<div class="resume-degree-org text-muted">Seneca College Markham</div>
-												<div class="resume-degree-time text-muted">01/2024 - 09/2024</div>
-											</li>
-											<li>
-												<div class="resume-degree font-weight-bold">B.Sc. in Computer Science</div>
-												<div class="resume-degree-org text-muted">COMSATS University Islamabad</div>
-												<div class="resume-degree-time text-muted">01/2013 - 01/2017</div>
-											</li>
-										</ul>
-									</section><!--//education-section-->
-									
-									<section class="skills-section py-3">
-										<h3 class="text-uppercase resume-section-heading mb-4">Languages</h3>
-										<ul class="list-unstyled resume-lang-list">
-											<li class="mb-2">Urdu <span class="text-muted">(Native)</span></li>
-											<li>English <span class="text-muted">(Professional)</span></li>
-										</ul>
-									</section><!--//certificates-section-->
-									
-									
-								</aside><!--//resume-aside-->
-							</div><!--//row-->
-						</div><!--//resume-body-->
-						<hr>
-						<div class="resume-footer text-center">
-							<ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
-								<li class="list-inline-item mb-lg-0 me-3"><a class="resume-link" href="https://github.com/ashranhaider"><i class="fa-brands fa-github-square fa-2x me-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">github.com/ashranhaider</span></a></li>
-								<li class="list-inline-item mb-lg-0 me-3"><a class="resume-link" href="https://www.linkedin.com/in/ashranhaider"><i class="fa-brands fa-linkedin fa-2x me-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">linkedin.com/in/ashranhaider</span></a></li>
-								<li class="list-inline-item mb-lg-0 me-lg-3"><a class="resume-link" href="https://www.facebook.com/ashran.haider"><i class="fa-brands fa-square-facebook fa-2x me-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">facebook.com/ashran.haider</span></a></li>
-							</ul>
-						</div><!--//resume-footer-->
-					</article>
-					
-				</div><!--//container-->
-				
-				<footer class="footer text-center py-4">
-					<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-					<!-- <small class="copyright text-muted">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small> -->
-				</footer>
-				
-			</div><!--//main-wrapper-->
-			
+									<div class="item-heading">
+										<h4 class="item-title">B.S(CS) in Computer Science</h4>
+										<div class="item-meta">COMSATS University Islamabad | 01/2013 - 01/2017</div>
+									</div>
+								</div>
+							</section><!--//education-section-->
+						</div><!--//resume-main-->
+						<aside class="resume-aside col-12 col-lg-4 px-lg-4 pb-lg-4">
+							<section class="skills-section py-3">
+								<h3 class="resume-section-heading">Technical Skills</h3>
+								
+								<div class="skill-category mb-4">
+									<h4 class="skill-category-title">Frontend Development</h4>
+									<ul class="list-unstyled skills-list">
+										<li>React.js</li>
+										<li>HTML/CSS</li>
+										<li>JavaScript</li>
+										<li>Bootstrap</li>
+									</ul>
+								</div>
 
+								<div class="skill-category mb-4">
+									<h4 class="skill-category-title">Backend Development</h4>
+									<ul class="list-unstyled skills-list">
+										<li>.NET Core</li>
+										<li>C#</li>
+										<li>ASP.NET Core</li>
+										<li>Entity Framework</li>
+									</ul>
+								</div>
+
+								<div class="skill-category mb-4">
+									<h4 class="skill-category-title">DevOps & Cloud</h4>
+									<ul class="list-unstyled skills-list">
+										<li>Azure</li>
+										<li>AWS</li>
+										<li>Docker</li>
+										<li>CI/CD</li>
+									</ul>
+								</div>
+
+								<div class="skill-category">
+									<h4 class="skill-category-title">Tools & Technologies</h4>
+									<ul class="list-unstyled skills-list">
+										<li>Git</li>
+										<li>SQL Server</li>
+										<li>MySQL</li>
+										<li>Agile</li>
+									</ul>
+								</div>
+							</section>
+							
+							<section class="languages-section py-3">
+								<h3 class="resume-section-heading">Languages</h3>
+								<ul class="list-unstyled resume-lang-list">
+									<li class="mb-2">Urdu <span class="text-muted">(Native)</span></li>
+									<li>English <span class="text-muted">(Professional)</span></li>
+								</ul>
+							</section><!--//certificates-section-->
+						</aside><!--//resume-aside-->
+					</div><!--//row-->
+				</div>
+
+				<div class="resume-footer text-center">
+					<div class="social-links">
+						<a href="https://github.com/ashranhaider" target="_blank"><i class="fab fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/ashranhaider" target="_blank"><i class="fab fa-linkedin"></i></a>
+						<a href="https://www.facebook.com/ashran.haider" target="_blank"><i class="fab fa-facebook"></i></a>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="script.js"></script>
 </body>
 </html> 
 
