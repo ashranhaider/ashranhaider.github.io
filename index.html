@@ -22,161 +22,7 @@
 
 	<style>
 		/* Custom enhancements */
-		.skill-bar {
-			height: 20px;
-			background: #f0f0f0;
-			border-radius: 20px;
-			margin-bottom: 10px;
-			overflow: hidden;
-			position: relative;
-		}
 		
-		.skill-progress {
-			height: 100%;
-			border-radius: 20px;
-			background: linear-gradient(90deg, #54B689, #3a9c70);
-			position: relative;
-			transition: width 1s ease-in-out;
-		}
-		
-		.skill-name {
-			position: absolute;
-			left: 10px;
-			top: 0;
-			color: #fff;
-			font-size: 12px;
-			line-height: 20px;
-			font-weight: 500;
-			z-index: 2;
-			text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-		}
-		
-		.skill-percent {
-			position: absolute;
-			right: 10px;
-			top: 0;
-			color: #fff;
-			font-size: 12px;
-			line-height: 20px;
-			font-weight: 500;
-			z-index: 2;
-			text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-		}
-		
-		.tech-badge {
-			display: inline-block;
-			padding: 5px 12px;
-			border-radius: 15px;
-			background: #e9f5ef;
-			color: #54B689;
-			font-size: 0.8rem;
-			margin: 0 5px 8px 0;
-			font-weight: 500;
-			border: 1px solid #d0e8dc;
-		}
-		
-		.project-card {
-			border-radius: 8px;
-			overflow: hidden;
-			box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-			margin-bottom: 25px;
-			background: #fff;
-			border: 1px solid #eaeaea;
-			transition: transform 0.3s ease, box-shadow 0.3s ease;
-		}
-		
-		.project-card:hover {
-			transform: translateY(-5px);
-			box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-		}
-		
-		.project-header {
-			padding: 15px 20px;
-			background: #f9f9f9;
-			border-bottom: 1px solid #eaeaea;
-		}
-		
-		.project-body {
-			padding: 20px;
-		}
-		
-		.achievement-item {
-			position: relative;
-			padding-left: 25px;
-			margin-bottom: 15px;
-		}
-		
-		.achievement-item:before {
-			content: "✓";
-			position: absolute;
-			left: 0;
-			color: #54B689;
-			font-weight: bold;
-		}
-		
-		.section-divider {
-			height: 3px;
-			background: linear-gradient(90deg, #54B689, transparent);
-			width: 80px;
-			margin: 20px 0;
-			border-radius: 3px;
-		}
-		
-		.timeline-item {
-			position: relative;
-			padding-left: 30px;
-			margin-bottom: 30px;
-		}
-		
-		.timeline-item:before {
-			content: "";
-			position: absolute;
-			left: 0;
-			top: 8px;
-			width: 12px;
-			height: 12px;
-			border-radius: 50%;
-			background: #54B689;
-			border: 3px solid #fff;
-			box-shadow: 0 0 0 2px #54B689;
-		}
-		
-		.timeline-item:after {
-			content: "";
-			position: absolute;
-			left: 5px;
-			top: 23px;
-			width: 2px;
-			height: calc(100% + 10px);
-			background: #54B689;
-		}
-		
-		.timeline-item:last-child:after {
-			display: none;
-		}
-		
-		.contact-info-item {
-			display: flex;
-			align-items: center;
-			margin-bottom: 12px;
-		}
-		
-		.contact-info-item i {
-			width: 25px;
-			color: #54B689;
-			font-size: 18px;
-		}
-		
-		@media (max-width: 767px) {
-			.tech-badge {
-				font-size: 0.75rem;
-				padding: 4px 10px;
-			}
-			
-			.project-card {
-				margin-bottom: 20px;
-			}
-		}
 	</style>
 </head> 
 
@@ -394,27 +240,9 @@
 								
 								<div class="skill-item mb-3">
 									<div class="skill-bar">
-										<div class="skill-progress" style="width: 90%">
+										<div class="skill-progress" style="width: 95%">
 											<span class="skill-name">ASP.NET Core</span>
-											<span class="skill-percent">90%</span>
-										</div>
-									</div>
-								</div>
-								
-								<div class="skill-item mb-3">
-									<div class="skill-bar">
-										<div class="skill-progress" style="width: 85%">
-											<span class="skill-name">Angular</span>
-											<span class="skill-percent">85%</span>
-										</div>
-									</div>
-								</div>
-								
-								<div class="skill-item mb-3">
-									<div class="skill-bar">
-										<div class="skill-progress" style="width: 85%">
-											<span class="skill-name">React.js</span>
-											<span class="skill-percent">85%</span>
+											<span class="skill-percent">95%</span>
 										</div>
 									</div>
 								</div>
@@ -430,18 +258,36 @@
 								
 								<div class="skill-item mb-3">
 									<div class="skill-bar">
-										<div class="skill-progress" style="width: 80%">
+										<div class="skill-progress" style="width: 90%">
 											<span class="skill-name">Entity Framework</span>
+											<span class="skill-percent">90%</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="skill-item mb-3">
+									<div class="skill-bar">
+										<div class="skill-progress" style="width: 80%">
+											<span class="skill-name">Angular</span>
 											<span class="skill-percent">80%</span>
 										</div>
 									</div>
 								</div>
 								
+								<div class="skill-item mb-3">
+									<div class="skill-bar">
+										<div class="skill-progress" style="width: 80%">
+											<span class="skill-name">React</span>
+											<span class="skill-percent">80%</span>
+										</div>
+									</div>
+								</div>
+																
 								<div class="skill-item mb-4">
 									<div class="skill-bar">
-										<div class="skill-progress" style="width: 85%">
+										<div class="skill-progress" style="width: 75%">
 											<span class="skill-name">Azure DevOps</span>
-											<span class="skill-percent">85%</span>
+											<span class="skill-percent">75%</span>
 										</div>
 									</div>
 								</div>
