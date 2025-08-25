@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-	<title>Portfolio - Ashran Haider</title>
+	<title>Ashran Haider - Full Stack Developer</title>
 	
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Ashran Haider - Full Stack Developer with 7+ years of experience in .NET Core, Angular, React, and cloud technologies">
+	<meta name="description" content="Full Stack Developer with 7+ years of experience in .NET Core, Angular, React, and cloud technologies">
 	<meta name="author" content="Ashran Haider">    
 	<link rel="shortcut icon" href="favicon.png"> 
 	
@@ -20,6 +20,164 @@
 	<!-- Theme CSS -->  
 	<link id="theme-style" rel="stylesheet" href="assets/css/devresume.css">
 
+	<style>
+		/* Custom enhancements */
+		.skill-bar {
+			height: 20px;
+			background: #f0f0f0;
+			border-radius: 20px;
+			margin-bottom: 10px;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.skill-progress {
+			height: 100%;
+			border-radius: 20px;
+			background: linear-gradient(90deg, #54B689, #3a9c70);
+			position: relative;
+			transition: width 1s ease-in-out;
+		}
+		
+		.skill-name {
+			position: absolute;
+			left: 10px;
+			top: 0;
+			color: #fff;
+			font-size: 12px;
+			line-height: 20px;
+			font-weight: 500;
+			z-index: 2;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+		}
+		
+		.skill-percent {
+			position: absolute;
+			right: 10px;
+			top: 0;
+			color: #fff;
+			font-size: 12px;
+			line-height: 20px;
+			font-weight: 500;
+			z-index: 2;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+		}
+		
+		.tech-badge {
+			display: inline-block;
+			padding: 5px 12px;
+			border-radius: 15px;
+			background: #e9f5ef;
+			color: #54B689;
+			font-size: 0.8rem;
+			margin: 0 5px 8px 0;
+			font-weight: 500;
+			border: 1px solid #d0e8dc;
+		}
+		
+		.project-card {
+			border-radius: 8px;
+			overflow: hidden;
+			box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+			margin-bottom: 25px;
+			background: #fff;
+			border: 1px solid #eaeaea;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+		
+		.project-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+		}
+		
+		.project-header {
+			padding: 15px 20px;
+			background: #f9f9f9;
+			border-bottom: 1px solid #eaeaea;
+		}
+		
+		.project-body {
+			padding: 20px;
+		}
+		
+		.achievement-item {
+			position: relative;
+			padding-left: 25px;
+			margin-bottom: 15px;
+		}
+		
+		.achievement-item:before {
+			content: "✓";
+			position: absolute;
+			left: 0;
+			color: #54B689;
+			font-weight: bold;
+		}
+		
+		.section-divider {
+			height: 3px;
+			background: linear-gradient(90deg, #54B689, transparent);
+			width: 80px;
+			margin: 20px 0;
+			border-radius: 3px;
+		}
+		
+		.timeline-item {
+			position: relative;
+			padding-left: 30px;
+			margin-bottom: 30px;
+		}
+		
+		.timeline-item:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 8px;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background: #54B689;
+			border: 3px solid #fff;
+			box-shadow: 0 0 0 2px #54B689;
+		}
+		
+		.timeline-item:after {
+			content: "";
+			position: absolute;
+			left: 5px;
+			top: 23px;
+			width: 2px;
+			height: calc(100% + 10px);
+			background: #54B689;
+		}
+		
+		.timeline-item:last-child:after {
+			display: none;
+		}
+		
+		.contact-info-item {
+			display: flex;
+			align-items: center;
+			margin-bottom: 12px;
+		}
+		
+		.contact-info-item i {
+			width: 25px;
+			color: #54B689;
+			font-size: 18px;
+		}
+		
+		@media (max-width: 767px) {
+			.tech-badge {
+				font-size: 0.75rem;
+				padding: 4px 10px;
+			}
+			
+			.project-card {
+				margin-bottom: 20px;
+			}
+		}
+	</style>
 </head> 
 
 <body>
@@ -37,195 +195,282 @@
 						
 						<div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
 							<ul class="list-unstyled mb-0">
-								<li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg me-2 "></i><a class="resume-link" href="tel:+16478185812">+1 647 8185812</a></li>
-								<li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg me-2"></i><a class="resume-link" href="mailto:ch.ashran@gmail.com">ch.ashran@gmail.com</a></li>
-								<li class="mb-2"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Toronto</li>
-								<li class="mb-0"><i class="fas fa-globe fa-fw fa-lg me-2"></i><a class="resume-link" href="https://www.linkedin.com/in/ashranhaider" target="_blank">linkedin.com/in/ashranhaider</a></li>
+								<li class="mb-2 contact-info-item"><i class="fas fa-phone-square fa-fw fa-lg me-2 "></i><a class="resume-link" href="tel:+16478185812">+1 647 8185812</a></li>
+								<li class="mb-2 contact-info-item"><i class="fas fa-envelope-square fa-fw fa-lg me-2"></i><a class="resume-link" href="mailto:ch.ashran@gmail.com">ch.ashran@gmail.com</a></li>
+								<li class="mb-2 contact-info-item"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Toronto, Canada</li>
+								<li class="mb-0 contact-info-item"><i class="fas fa-globe fa-fw fa-lg me-2"></i><a class="resume-link" href="https://www.linkedin.com/in/ashranhaider" target="_blank">linkedin.com/in/ashranhaider</a></li>
 							</ul>
 						</div><!--//resume-contact-->
 					</div><!--//row-->
 					
-					<!-- Download Buttons mobile buttons -->
-				<div class="d-block d-md-none mt-2">
-					<div class="d-grid gap-2">
-						<a href="resume.pdf" class="btn btn-primary" download>
-							<i class="fas fa-file-pdf me-2"></i>PDF Resume
-						</a>
-						<a href="resume.docx" class="btn btn-success" download>
-							<i class="fas fa-file-word me-2"></i>DOCX Resume
-						</a>
+					<!-- Download Buttons -->
+					<div class="row mt-3 justify-content-center resume-download-buttons">
+						<div class="col-auto">
+							<a href="resume.pdf" class="btn btn-primary me-2" download="AshranHaider_Resume.pdf" target="_blank">
+								<i class="fas fa-file-pdf me-2"></i>Download PDF
+							</a>
+							<a href="resume.docx" class="btn btn-success" download="AshranHaider_Resume.docx" target="_blank">
+								<i class="fas fa-file-word me-2"></i>Download DOCX
+							</a>
+						</div>
 					</div>
-				</div>
-
-				<!-- Download Buttons desktop buttons -->
-				<div class="row mt-3 d-none d-md-flex justify-content-center">
-					<div class="col-auto">
-						<a href="resume.pdf" class="btn btn-primary me-2" download="AshranHaider_Resume.pdf" target="_blank">
-							<i class="fas fa-file-pdf me-2"></i>Download resume in PDF
-						</a>
-						<a href="resume.docx" class="btn btn-success" download="AshranHaider_Resume.docx" target="_blank">
-							<i class="fas fa-file-word me-2"></i>Download resume in DOCX
-						</a>
-					</div>
-				</div>
-
-					
 				</div><!--//resume-header-->
+				
 				<hr>
+				
 				<div class="resume-intro py-3">
 					<div class="row align-items-center">
 						<div class="col-12 col-md-3 col-xl-2 text-center">
-						    <img class="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded mx-auto" style="border-radius: 50% !important; object-fit: cover;" src="assets/images/resume-profile.jpg" alt="Ashran Haider">
+						    <img class="resume-profile-image mb-3 mb-md-0 me-md-5 ms-md-0 rounded mx-auto" style="border-radius: 50% !important; object-fit: cover;" src="assets/images/resume-profile.jpg" alt="Ashran Haider">
 						</div>
 						
 						<div class="col text-start">
 							<p class="mb-0">
-								Full Stack Developer with 7+ years of experience architecting and delivering scalable web applications using modern .NET and JavaScript frameworks. Proven expertise in end-to-end development with <strong>.NET Core, Angular, React, SQL/NoSQL databases, and Azure DevOps</strong>, coupled with a strong focus on CI/CD pipelines and cloud-native solutions. Passionate about translating complex business requirements into efficient, maintainable code—leveraging Agile methodologies to drive collaboration across teams. Committed to continuous learning and mentoring, with a track record of leading projects like the <strong>Asset Management System</strong> and optimizing critical systems for clients like <strong>NLC</strong>.  
+								Experienced software developer with a solid seven-year track record specializing in the development, design, and implementation of web applications. Proficient in utilizing technologies such as <strong>.NET Core, Angular, React, SQL, and Azure DevOps</strong>. Passionate about coding and continuously seeking self-improvement through dedicated research and self-learning.
 							</p>
 						</div><!--//col-->
 					</div>
 				</div><!--//resume-intro-->
+				
 				<hr>
+				
 				<div class="resume-body">
 					<div class="row">
-						<div class="resume-main col-12 col-lg-8 col-xl-9   pe-0   pe-lg-5">
+						<div class="resume-main col-12 col-lg-8 col-xl-9 pe-0 pe-lg-5">
 							<section class="work-section py-3">
-								<h3 class="text-uppercase resume-section-heading mb-4">Work Experiences</h3>
+								<h3 class="text-uppercase resume-section-heading mb-4">Work Experience</h3>
+								<div class="section-divider"></div>
 								
-								<div class="item mb-3">
+								<div class="timeline-item">
 									<div class="item-heading row align-items-center mb-2">
 										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Full Stack Developer</h4>
 										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">Contour Pvt Limited | 03/2023 - 12/2023</div>
 									</div>
 									<div class="item-content">
 										<p>Development and maintenance of CRB Cunningham's software using Agile methodology. Collaboration with team from requirements to final delivery of software components. Actively participated in software development using technologies such as C#, ASP.NET Core, React.js, and SQL Server.</p>
-										<ul>
-											<li>Enhanced system performance and improved end-user experience by optimizing database queries and applying performance profiling to critical modules</li>
-											<li>Ensured accessibility and usability by incorporating responsive UI enhancements</li>
-											<li>Actively participated in code reviews, design discussions, and contributed to technical decisions within team</li>
-										</ul>
+										<div class="tech-badge">C#</div>
+										<div class="tech-badge">ASP.NET Core</div>
+										<div class="tech-badge">React.js</div>
+										<div class="tech-badge">SQL Server</div>
+										<div class="tech-badge">Agile Methodology</div>
 									</div>
 								</div><!--//item-->
 								
-								<div class="item mb-3">
+								<div class="timeline-item">
 									<div class="item-heading row align-items-center mb-2">
 										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Full Stack Developer / Team Lead</h4>
 										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">DPL | 08/2021 - 03/2023</div>
 									</div>
 									<div class="item-content">
 										<p>Developed and delivered the successful product 'Asset Management System' single-handedly, later assuming the role of team lead for this project. Used .NET Core, Entity Framework, MySQL at Back-End and Angular, Bootstrap, Angular Material UI at frontend.</p>
-										<ul>
-											<li>Reduced deployment time by 75% by implementing Azure DevOps CI/CD pipelines</li>
-											<li>Delivered a scalable API integration for NLC Border Terminal System under a tight timeline</li>
-											<li>Used Active Directory for authentication of users and Azure DevOps CI/CD for fast deployments</li>
-											<li>As Senior Backend Engineer developed API using .NET 6, Oracle DB at backend in a short time period</li>
-											<li>Took charge of project as senior software engineer and resolved issues of software architecture</li>
-											<li>Took part in requirements gathering meetings with client at NLC HQ</li>
-											<li>Mentored a junior .NET Core developer through code reviews and technical guidance</li>
-										</ul>
+										<div class="tech-badge">.NET Core</div>
+										<div class="tech-badge">Entity Framework</div>
+										<div class="tech-badge">Angular</div>
+										<div class="tech-badge">MySQL</div>
+										<div class="tech-badge">Azure DevOps</div>
+										<div class="tech-badge">Team Leadership</div>
 									</div>
 								</div><!--//item-->
 								
-								<div class="item mb-3">
+								<div class="timeline-item">
 									<div class="item-heading row align-items-center mb-2">
 										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Full Stack Developer</h4>
 										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">DPL | 04/2019 - 03/2021</div>
 									</div>
 									<div class="item-content">
 										<p>Participated as ASP.NET MVC Developer, contributed ideas, developed multiple features in admin portal of banking app of Arro Money project. Worked as full stack developer on multiple features of healthcare projects.</p>
-										<ul>
-											<li>Developed user feedback module, doctor public profile page optimization</li>
-											<li>Made improvements in various pages of the app using technologies of ASP.NET Core 2, Razor pages and Angular</li>
-										</ul>
+										<div class="tech-badge">ASP.NET MVC</div>
+										<div class="tech-badge">Razor Pages</div>
+										<div class="tech-badge">Angular</div>
+										<div class="tech-badge">SQL Server</div>
 									</div>
 								</div><!--//item-->
 								
-								<div class="item mb-3">
+								<div class="timeline-item">
 									<div class="item-heading row align-items-center mb-2">
 										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">ASP.NET Developer</h4>
 										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">Fincon Services | 02/2018 - 04/2019</div>
 									</div>
 									<div class="item-content">
 										<p>Developed backend API for a survey android app using ASP.NET and SQL server as backend and web app for reporting based on survey data.</p>
-										<ul>
-											<li>Ensured accessibility and usability by incorporating responsive UI enhancements</li>
-										</ul>
+										<div class="tech-badge">ASP.NET</div>
+										<div class="tech-badge">SQL Server</div>
+										<div class="tech-badge">API Development</div>
 									</div>
 								</div><!--//item-->
 								
-								<div class="item">
+								<div class="timeline-item">
 									<div class="item-heading row align-items-center mb-2">
 										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">ASP.NET Developer</h4>
 										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">COMSATS IT Center | 02/2017 - 10/2017</div>
 									</div>
 									<div class="item-content">
 										<p>Worked as junior developer on Comsats student portal using ASP.NET Webforms technology and SQL Server as backend. Developed multiple forms in the application and worked on reporting pages.</p>
+										<div class="tech-badge">ASP.NET WebForms</div>
+										<div class="tech-badge">SQL Server</div>
 									</div>
 								</div><!--//item-->
-								
 							</section><!--//work-section-->
 							
 							<section class="project-section py-3">
-								<h3 class="text-uppercase resume-section-heading mb-4">Key Achievements</h3>
-								<div class="item mb-3">
-									<div class="item-content">
-										<ul class="resume-list">
-											<li>Delivered and led the development of Asset Management System (.NET Core API + Angular), deploying to production with automated CI/CD pipelines using OAuth 2.0</li>
-											<li>Implemented industry standard best practices and software architectures including Repository Patterns and Singleton Design Patterns</li>
-											<li>Reduced deployment time by 75% by implementing Azure DevOps CI/CD pipelines</li>
-											<li>Enhanced system performance by optimizing database queries and applying performance profiling</li>
-											<li>Delivered a scalable API integration for NLC Border Terminal System under a tight timeline</li>
-											<li>Resolved critical production issues with rapid turnaround, ensuring high availability of enterprise applications</li>
-											<li>Provided technical leadership support and mentorship to project teams</li>
-										</ul>
+								<h3 class="text-uppercase resume-section-heading mb-4">Key Projects</h3>
+								<div class="section-divider"></div>
+								
+								<div class="project-card">
+									<div class="project-header">
+										<h5 class="mb-0">Asset Management System</h5>
+										<p class="text-muted mb-0">DPL | .NET Core API + Angular</p>
 									</div>
-								</div><!--//item-->
+									<div class="project-body">
+										<p>Led the end-to-end development and deployment of an Asset Management System using .NET Core API and Angular, deploying to production with automated CI/CD pipelines using OAuth 2.0.</p>
+										<div class="tech-badge">.NET Core</div>
+										<div class="tech-badge">Angular</div>
+										<div class="tech-badge">Entity Framework</div>
+										<div class="tech-badge">MySQL</div>
+										<div class="tech-badge">Azure DevOps</div>
+										<div class="tech-badge">OAuth 2.0</div>
+									</div>
+								</div><!--//project-card-->
+								
+								<div class="project-card">
+									<div class="project-header">
+										<h5 class="mb-0">NLC Border Terminal System</h5>
+										<p class="text-muted mb-0">DPL | .NET 6 + Oracle DB</p>
+									</div>
+									<div class="project-body">
+										<p>Delivered a scalable API integration for NLC Border Terminal System under a tight timeline, enabling faster operational processes. Developed API using .NET 6 and Oracle DB.</p>
+										<div class="tech-badge">.NET 6</div>
+										<div class="tech-badge">Oracle DB</div>
+										<div class="tech-badge">REST API</div>
+										<div class="tech-badge">Scalable Architecture</div>
+									</div>
+								</div><!--//project-card-->
+								
+								<div class="project-card">
+									<div class="project-header">
+										<h5 class="mb-0">CRB Cunningham Software</h5>
+										<p class="text-muted mb-0">Contour Pvt Limited | ASP.NET Core + React</p>
+									</div>
+									<div class="project-body">
+										<p>Development and maintenance of CRB Cunningham's software using Agile methodology. Enhanced system performance by optimizing database queries and applying performance profiling.</p>
+										<div class="tech-badge">ASP.NET Core</div>
+										<div class="tech-badge">React.js</div>
+										<div class="tech-badge">SQL Server</div>
+										<div class="tech-badge">Performance Optimization</div>
+									</div>
+								</div><!--//project-card-->
 							</section><!--//project-section-->
+							
+							<section class="achievement-section py-3">
+								<h3 class="text-uppercase resume-section-heading mb-4">Key Achievements</h3>
+								<div class="section-divider"></div>
+								
+								<ul class="list-unstyled resume-list">
+									<li class="achievement-item">Reduced deployment time by 75% by implementing Azure DevOps CI/CD pipelines</li>
+									<li class="achievement-item">Enhanced system performance by optimizing database queries and applying performance profiling</li>
+									<li class="achievement-item">Mentored junior developers through code reviews and technical guidance</li>
+									<li class="achievement-item">Implemented industry standard best practices and software architectures including Repository Patterns</li>
+									<li class="achievement-item">Resolved critical production issues with rapid turnaround, ensuring high availability of enterprise applications</li>
+									<li class="achievement-item">Delivered scalable API integration for NLC Border Terminal System under tight deadline</li>
+								</ul>
+							</section><!--//achievement-section-->
 						</div><!--//resume-main-->
+						
 						<aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
 							<section class="skills-section py-3">
-								<h3 class="text-uppercase resume-section-heading mb-4">Skills</h3>
-								<div class="item">
-									<h4 class="item-title">Technical</h4>
-									<ul class="list-unstyled resume-skills-list">
-										<li class="mb-2">C# / .NET Core / ASP.NET Core</li>
-										<li class="mb-2">REST API / Web API</li>
-										<li class="mb-2">Entity Framework / Dapper</li>
-										<li class="mb-2">SQL Server / MySQL / Oracle</li>
-										<li class="mb-2">Angular / React / TypeScript</li>
-										<li class="mb-2">JavaScript / jQuery</li>
-										<li class="mb-2">HTML5 / CSS / Bootstrap</li>
-										<li class="mb-2">Azure DevOps / CI/CD</li>
-										<li class="mb-2">Azure App Services / Functions</li>
-										<li class="mb-2">Git / GitHub</li>
-										<li class="mb-2">Docker / Kubernetes</li>
-										<li class="mb-2">xUnit / NUnit</li>
-										<li>Agile / Scrum / TDD</li>
-									</ul>
-								</div><!--//item-->
-								<div class="item">
-									<h4 class="item-title">Professional</h4>
-									<ul class="list-unstyled resume-skills-list">
-										<li class="mb-2">Problem-solving</li>
-										<li class="mb-2">Algorithms & Data Structures</li>
-										<li class="mb-2">Technical Leadership</li>
-										<li class="mb-2">Team Collaboration</li>
-										<li class="mb-2">Mentoring</li>
-										<li class="mb-2">Code Reviews</li>
-										<li class="mb-2">Clean Code Practices</li>
-										<li class="mb-2">Performance Optimization</li>
-										<li class="mb-2">Debugging & Troubleshooting</li>
-										<li>Continuous Learning</li>
-									</ul>
-								</div><!--//item-->
+								<h3 class="text-uppercase resume-section-heading mb-4">Technical Skills</h3>
+								<div class="section-divider"></div>
+								
+								<h4 class="item-title mb-3">Core Technologies</h4>
+								
+								<div class="skill-item mb-3">
+									<div class="skill-bar">
+										<div class="skill-progress" style="width: 95%">
+											<span class="skill-name">C# / .NET Core</span>
+											<span class="skill-percent">95%</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="skill-item mb-3">
+									<div class="skill-bar">
+										<div class="skill-progress" style="width: 90%">
+											<span class="skill-name">ASP.NET Core</span>
+											<span class="skill-percent">90%</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="skill-item mb-3">
+									<div class="skill-bar">
+										<div class="skill-progress" style="width: 85%">
+											<span class="skill-name">Angular</span>
+											<span class="skill-percent">85%</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="skill-item mb-3">
+									<div class="skill-bar">
+										<div class="skill-progress" style="width: 85%">
+											<span class="skill-name">React.js</span>
+											<span class="skill-percent">85%</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="skill-item mb-3">
+									<div class="skill-bar">
+										<div class="skill-progress" style="width: 90%">
+											<span class="skill-name">SQL Server</span>
+											<span class="skill-percent">90%</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="skill-item mb-3">
+									<div class="skill-bar">
+										<div class="skill-progress" style="width: 80%">
+											<span class="skill-name">Entity Framework</span>
+											<span class="skill-percent">80%</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="skill-item mb-4">
+									<div class="skill-bar">
+										<div class="skill-progress" style="width: 85%">
+											<span class="skill-name">Azure DevOps</span>
+											<span class="skill-percent">85%</span>
+										</div>
+									</div>
+								</div>
+								
+								<h4 class="item-title mb-3">Additional Skills</h4>
+								<div class="tech-badge">TypeScript</div>
+								<div class="tech-badge">JavaScript</div>
+								<div class="tech-badge">jQuery</div>
+								<div class="tech-badge">HTML5/CSS3</div>
+								<div class="tech-badge">Bootstrap</div>
+								<div class="tech-badge">REST APIs</div>
+								<div class="tech-badge">Microservices</div>
+								<div class="tech-badge">Docker</div>
+								<div class="tech-badge">Kubernetes</div>
+								<div class="tech-badge">Azure Services</div>
+								<div class="tech-badge">Git/GitHub</div>
+								<div class="tech-badge">Agile/Scrum</div>
+								<div class="tech-badge">CI/CD Pipelines</div>
 							</section><!--//skills-section-->
+							
 							<section class="education-section py-3">
 								<h3 class="text-uppercase resume-section-heading mb-4">Education</h3>
+								<div class="section-divider"></div>
+								
 								<ul class="list-unstyled resume-education-list">
 									<li class="mb-3">
 										<div class="resume-degree font-weight-bold">Graduate Certificate in Project Management in IT</div>
 										<div class="resume-degree-org text-muted">Seneca Polytechnic</div>
-										<div class="resume-degree-time text-muted">2023 - 2025 (Expected)</div>
+										<div class="resume-degree-time text-muted">2023 - 2025</div>
 									</li>
 									<li class="mb-3">
 										<div class="resume-degree font-weight-bold">Graduate Certificate in Cloud Architecture and Administration</div>
@@ -242,17 +487,21 @@
 							
 							<section class="skills-section py-3">
 								<h3 class="text-uppercase resume-section-heading mb-4">Architectures & Methods</h3>
-								<ul class="list-unstyled resume-lang-list">
-									<li class="mb-2">Onion Architecture</li>
-									<li class="mb-2">Clean Architecture</li>
-									<li class="mb-2">Microservices</li>
-									<li class="mb-2">Domain Driven Design (DDD)</li>
-									<li>Repository Pattern</li>
-								</ul>
+								<div class="section-divider"></div>
+								
+								<div class="tech-badge">Onion Architecture</div>
+								<div class="tech-badge">Clean Architecture</div>
+								<div class="tech-badge">Microservices</div>
+								<div class="tech-badge">Domain Driven Design</div>
+								<div class="tech-badge">Repository Pattern</div>
+								<div class="tech-badge">Singleton Pattern</div>
+								<div class="tech-badge">RESTful Principles</div>
 							</section><!--//architectures-section-->
 							
 							<section class="skills-section py-3">
 								<h3 class="text-uppercase resume-section-heading mb-4">Languages</h3>
+								<div class="section-divider"></div>
+								
 								<ul class="list-unstyled resume-lang-list">
 									<li class="mb-2">Urdu <span class="text-muted">(Native)</span></li>
 									<li>English <span class="text-muted">(Professional)</span></li>
@@ -262,7 +511,9 @@
 						</aside><!--//resume-aside-->
 					</div><!--//row-->
 				</div><!--//resume-body-->
+				
 				<hr>
+				
 				<div class="resume-footer text-center">
 					<ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
 						<li class="list-inline-item mb-lg-0 me-3"><a class="resume-link" href="https://github.com/ashranhaider"><i class="fa-brands fa-github-square fa-2x me-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">github.com/ashranhaider</span></a></li>
@@ -274,11 +525,24 @@
 		</div><!--//container-->
 		
 		<footer class="footer text-center py-4">
-			<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-			<!-- <small class="copyright text-muted">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small> -->
+			<!-- Remove attribution or keep if needed -->
 		</footer>
 		
 	</div><!--//main-wrapper-->
+	
+	<script>
+		// Animate skill bars on page load
+		document.addEventListener('DOMContentLoaded', function() {
+			const skillBars = document.querySelectorAll('.skill-progress');
+			skillBars.forEach(bar => {
+				const width = bar.style.width;
+				bar.style.width = '0';
+				setTimeout(() => {
+					bar.style.width = width;
+				}, 500);
+			});
+		});
+	</script>
 	
 
 </body>
