@@ -14260,3 +14260,55 @@ a.resume-link:hover {
     margin-bottom: 20px;
   }
 }
+.tech-badge {
+			display: inline-block;
+			background-color: #f0f4f8;
+			color: #3b82f6;
+			padding: 0.3rem 0.6rem;
+			border-radius: 4px;
+			font-size: 0.8rem;
+			margin: 0.2rem;
+			font-weight: 500;
+		}
+		
+		.skill-bar {
+			height: 24px;
+			background-color: #e9ecef;
+			border-radius: 4px;
+			margin-bottom: 0.5rem;
+			position: relative;
+		}
+		
+		.skill-progress {
+			height: 100%;
+			border-radius: 4px;
+			background-color: #3b82f6;
+			transition: width 1s ease-in-out;
+			position: relative;
+		}
+		
+		.skill-name {
+			position: absolute;
+			left: 10px;
+			color: white;
+			font-weight: 500;
+			z-index: 1;
+		}
+		
+		.skill-percent {
+			position: absolute;
+			right: 10px;
+			color: white;
+			font-weight: 500;
+			z-index: 1;
+		}
+		
+		.contact-info-item {
+			display: flex;
+			align-items: center;
+		}
+		
+		.resume-download-buttons {
+			margin-top: 1rem;
+		}
+		
